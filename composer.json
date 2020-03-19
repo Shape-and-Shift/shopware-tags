@@ -1,0 +1,33 @@
+{
+    "name": "sas/tags",
+    "description": "Plugin to show tags of a product",
+    "version": "v1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shape & Shift",
+            "homepage": "https://shapeandshift.dev"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sas\\SasTags\\": "src/"
+        }
+    },
+    "require": {
+        "shopware/core": "*",
+        "shopware/storefront": "*"
+    },
+    "extra": {
+        "shopware-plugin-class": "Sas\\SasTags\\SasTags",
+        "label": {
+            "de-DE": "Tags anzeigen",
+            "en-GB": "Show tags"
+        },
+        "description": {
+            "de-DE": "Ausgabe der Tags auf der Produkt Detailseite",
+            "en-GB": "Showing tags on the product detail page"
+        }
+    }
+}
